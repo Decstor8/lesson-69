@@ -14,8 +14,9 @@ const Details = () => {
 
   return (
     <>
-      <img src={currentShow?.image.original} alt="image films" />
-      <h1>{currentShow?.name}</h1>
+      <img className={'w-25 d-flex justify-content-center'} src={currentShow?.image.original} alt="image films" />
+      <h1 className={'text-center'}>{currentShow?.name}</h1>
+      <p>{currentShow?.summary}</p>
     </>
   );
 };
